@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$red :  #e74c3c;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  background-color: #af601a;
+
+}
+
+.main {
+  width: 1216px;
+  height: 740px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('./images/background.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.board-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 40%;
+}
+
+.board-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40%;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top : 150px;
+}
+
+.bi-circle-fill {
+  height: 16px;
+  width: 16px;
+}
+
+.global {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  font-size: 100px;
+  font-weight: 300;
+  color: $red;
+}
+
+.current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $red;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.round {
+  font-size: 28px;
+}
+
+.round p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  font-size: 20px;
+}
+
+.menu > svg {
+  height: 120px;
+  width: 120px;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.sub-menu svg {
+  height: 30px;
+  width: 30px;
+  margin-right : 20px;
+}
+
+.sub-menu svg:hover {
+  fill: $red;
+}
